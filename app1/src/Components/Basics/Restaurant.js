@@ -10,15 +10,15 @@ const uniqueList = [
       return curElem.category;
     })
   ),
-  "All",
+  "AllinOne",
 ];
-
+console.log(uniqueList);
 
 const Restaurant = () => {
     const [menuData,setMenuData]=useState(Menu);
      const [menuList,setMenuList]=useState(uniqueList);
     const filterItem=(category)=>{
-      if(category==="All"){
+      if(category==="AllinOne"){
         return setMenuData(Menu);
       }
       const updatedList=Menu.filter((currElem)=>{
